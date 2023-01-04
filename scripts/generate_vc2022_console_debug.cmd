@@ -10,5 +10,5 @@ cmake -G "Visual Studio 17 2022" ^
 -DBUILD_PLATFORM_HTTP=OFF ^
 -DBUILD_PLATFORM_GUI=OFF ^
 -DBUILD_SOUND_SFML=OFF ^
- ../src
+ ../games
 PAUSE

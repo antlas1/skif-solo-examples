@@ -43,14 +43,6 @@ private:
 
 int main(int argc, char* argv[])
 {
-    /* Memory leak detection
-    _CrtSetReportMode(_CRT_WARN, _CRTDBG_MODE_DEBUG);
-    _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
-    _CrtSetBreakAlloc(9554);
-    _CrtSetBreakAlloc(9553);
-    _CrtSetBreakAlloc(9552);
-    _CrtSetBreakAlloc(9609);
-    */
     try {
         //1. Конструируем игру
         auto game = std::make_shared<StubTextGame>();
@@ -62,6 +54,5 @@ int main(int argc, char* argv[])
         std::cout << "Exception: " << e.what() << "\n";
         return EXIT_FAILURE;
     }
-    //_CrtDumpMemoryLeaks();//Memory leak detection
     return EXIT_SUCCESS;
 }

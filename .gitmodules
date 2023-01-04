@@ -1,0 +1,3 @@
+[submodule "games/skif-solo"]
+	path = games/skif-solo
+	url = git@github.com:antlas1/skif-solo.git
